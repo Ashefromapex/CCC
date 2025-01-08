@@ -135,16 +135,16 @@ int main(int argc, char **argv)
                     input[strlen(input)] = ' ';
                     if(isNum(input[0]) || isOp(input[0]) || input[0] == '(' || input[0] == '#' || isVar(input[0]))
                     {
-                        int start;
-                        int interval;
-                        int end;
+                        double start;
+                        double interval;
+                        double end;
                         printf("inputted function: %s\n", input);
                         printf("Input starting point for variable:\n");
-                        scanf("%d", &start);
+                        scanf("%lf", &start);
                         printf("Input interval for variable:\n");
-                        scanf("%d", &interval);
+                        scanf("%lf", &interval);
                         printf("Input ending point for variable:\n");
-                        scanf("%d", &end);
+                        scanf("%lf", &end);
                         //find variable in quation
                         int varpos = -1;
                         int i = 0;
