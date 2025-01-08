@@ -266,7 +266,7 @@ double calculate(char *input)
                 strncpyn(buffer, input, startnum, numlength);
                 //printf("%s\n", buffer);
                 numbers[position] = (double) stringToFloat(buffer);
-                //printf("%f\n", numbers[position]); 
+                printf("%f\n", numbers[position]); 
                 operands[position] = '0';
                 numlength = 0;
                 startnum = -1;
